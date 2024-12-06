@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  wrapper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: go-server
+    ports:
+      - "127.0.0.1:8080:8080"
